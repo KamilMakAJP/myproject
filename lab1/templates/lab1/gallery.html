@@ -1,0 +1,21 @@
+{% extends "lab1/base.html" %}
+{% load static %}
+
+{% block content %}
+    <h1>Moja Galeria</h1>
+    <p>Oto kilka zdjęć związanych z moim hobby:</p>
+    
+    <div class="gallery-container">
+        
+        <div class="photo">
+            <img src="{% static 'lab1/images/foto1.jpg' %}" alt="Zdjęcie 1">
+            <p>Opis pierwszego zdjęcia</p>
+        </div>
+
+        <div class="photo">
+            <img src="{% static 'lab1/images/foto2.jpg' %}" alt="Zdjęcie 2">
+            <p>Opis drugiego zdjęcia</p>
+        </div>
+
+    </div>
+{% endblock %}

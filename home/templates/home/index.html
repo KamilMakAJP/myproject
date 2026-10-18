@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Laboratoria - Strona Główna</title>
+    <!-- Podłączenie pliku CSS z folderu static -->
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+<body>
+
+    <h1>Wybierz Projekt</h1>
+
+    <div class="grid-container">
+        <a href="/lab0/" class="card">
+            <h2>Lab 0</h2>
+            <p>Strona startowa Django</p>
+        </a>
+        
+        <a href="/lab1/" class="card">
+            <h2>Lab 1</h2>
+            <p>Moje Hobby (Home, About, Gallery)</p>
+        </a>
+    </div>
+
+</body>
+</html>
